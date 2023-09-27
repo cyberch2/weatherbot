@@ -18,5 +18,7 @@ def find_dates_as_word(text: str) -> List[date]:
 
     return dates_as_word
 
+
 def parse_natasha_date_to_datetime(date_str: Date) -> date:
-    return datetime(date_str.year or date.today().year, date_str.month or date.today().month, date_str.day or date.today().day)
+    return datetime(date_str.year or date.today().year, date_str.month or date.today().month,
+                    date_str.day or date.today().day)
